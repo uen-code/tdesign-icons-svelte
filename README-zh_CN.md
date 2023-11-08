@@ -18,15 +18,15 @@
 
 English | [简体中文](./README-zh_CN.md)
 
-TDesign icons svelte is a icon component library for svelte.
+TDesign icons svelte是一个图标库。
 
-# 📦 Installation
+# 📦 安装
 
 ```shell
 npm i tdesign-icons-svelte
 ```
 
-# 🔨 Usage
+# 🔨 使用
 
 ```js
 // svgsprite
@@ -40,11 +40,11 @@ import { CloseIcon, ChatIcon } from "tdesign-icons-svelte";
 <CloseIcon />;
 ```
 
-# License
+# 开源许可
 
 The MIT License. Please see [the license file](./LICENSE) for more information.
 
-# Contact me
+# 联系我
 
 - QQ: 641477144@qq.com
 - GMAIL: programmerhzx@gmail.com
