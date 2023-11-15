@@ -1,5 +1,4 @@
-import {classPrefix} from './config'
-
+import { classPrefix } from './config';
 
 /**
  * 获取样式前缀
@@ -29,7 +28,17 @@ export function getStyleString(obj) {
     return '';
   }
   return Object.keys(obj)
-    .map(key => `${camelToDash(key)}:${obj[key]}`)
+    .map((key) => {
+      if (obj[key] !== undefined && obj[key] !== '') {
+        if (key === 'style') {
+          return obj[key];
+        } else {
+          return `${camelToDash(key)}:${obj[key]}`;
+        }
+      }
+      return '';
+    })
+    .filter(Boolean)
     .join(';');
 }
 
@@ -58,7 +67,7 @@ export const SIZE = {
   medium: `${classPrefix}-size-m`,
   large: `${classPrefix}-size-l`,
   block: `${classPrefix}-size-full-width`,
-}
+};
 
 /**
  * 组件样式状态
@@ -69,4 +78,8 @@ export const STATUS = {
   focused: `${classPrefix}-is-focused`,
   active: `${classPrefix}-is-active`,
   checked: `${classPrefix}-is-checked`,
-}
+  indeterminate: `${classPrefix}-is-indeterminate`,
+  warning: `${classPrefix}-is-warning`,
+  success: `${classPrefix}-is-success`,
+  error: `${classPrefix}-is-error`,
+};
