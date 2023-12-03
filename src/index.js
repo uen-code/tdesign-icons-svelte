@@ -1,119 +1,15 @@
-export { default as Icon } from './Icon.svelte';
-export { default as AddIcon } from './components/design/AddIcon.svelte';
-export { default as BrowseIcon } from './components/design/BrowseIcon.svelte';
-export { default as BrowseOffIcon } from './components/design/BrowseOffIcon.svelte';
-export { default as CalendarIcon } from './components/design/CalendarIcon.svelte';
-export { default as CaretRightSmallIcon } from './components/design/CaretRightSmallIcon.svelte';
-export { default as ChatIcon } from './components/design/ChatIcon.svelte';
-export { default as CheckCircleFilledIcon } from './components/design/CheckCircleFilledIcon.svelte';
-export { default as CheckIcon } from './components/design/CheckIcon.svelte';
-export { default as ChevronLeftIcon } from './components/design/ChevronLeftIcon.svelte';
-export { default as ChevronRightIcon } from './components/design/ChevronRightIcon.svelte';
-export { default as CloseCircleFilledIcon } from './components/design/CloseCircleFilledIcon.svelte';
-export { default as CloseIcon } from './components/design/CloseIcon.svelte';
-export { default as CloudDownloadIcon } from './components/design/CloudDownloadIcon.svelte';
-export { default as CloudUploadIcon } from './components/design/CloudUploadIcon.svelte';
-export { default as ControlPlatformIcon } from './components/design/ControlPlatformIcon.svelte';
-export { default as DashboardIcon } from './components/design/DashboardIcon.svelte';
-export { default as DiscountIcon } from './components/design/DiscountIcon.svelte';
-export { default as Edit1Icon } from './components/design/Edit1Icon.svelte';
-export { default as EllipsisIcon } from './components/design/EllipsisIcon.svelte';
-export { default as ErrorCircleFilledIcon } from './components/design/ErrorCircleFilledIcon.svelte';
-export { default as HeartIcon } from './components/design/HeartIcon.svelte';
-export { default as HelpCircleFilledIcon } from './components/design/HelpCircleFilledIcon.svelte';
-export { default as HomeIcon } from './components/design/HomeIcon.svelte';
-export { default as InfoCircleFilledIcon } from './components/design/InfoCircleFilledIcon.svelte';
-export { default as JumpIcon } from './components/design/JumpIcon.svelte';
-export { default as LayersIcon } from './components/design/LayersIcon.svelte';
-export { default as LinkIcon } from './components/design/LinkIcon.svelte';
-export { default as LockOnIcon } from './components/design/LockOnIcon.svelte';
-export { default as MailIcon } from './components/design/MailIcon.svelte';
-export { default as MoreIcon } from './components/design/MoreIcon.svelte';
-export { default as NotificationFilledIcon } from './components/design/NotificationFilledIcon.svelte';
-export { default as PlayCircleIcon } from './components/design/PlayCircleIcon.svelte';
-export { default as PreciseMonitorIcon } from './components/design/PreciseMonitorIcon.svelte';
-export { default as RootListIcon } from './components/design/RootListIcon.svelte';
-export { default as SearchIcon } from './components/design/SearchIcon.svelte';
-export { default as ServerIcon } from './components/design/ServerIcon.svelte';
-export { default as ShareIcon } from './components/design/ShareIcon.svelte';
-export { default as ThumbUpIcon } from './components/design/ThumbUpIcon.svelte';
-export { default as UserCircleIcon } from './components/design/UserCircleIcon.svelte';
-export { default as UserIcon } from './components/design/UserIcon.svelte';
+const fs = require('fs');
+const path = require('path');
 
-// letters
-export { default as LettersAIcon } from './components/letters/LettersAIcon.svelte';
-export { default as LettersBIcon } from './components/letters/LettersBIcon.svelte';
-export { default as LettersCIcon } from './components/letters/LettersCIcon.svelte';
-export { default as LettersDIcon } from './components/letters/LettersDIcon.svelte';
-export { default as LettersEIcon } from './components/letters/LettersEIcon.svelte';
-export { default as LettersFIcon } from './components/letters/LettersFIcon.svelte';
-export { default as LettersGIcon } from './components/letters/LettersGIcon.svelte';
-export { default as LettersHIcon } from './components/letters/LettersHIcon.svelte';
-export { default as LettersIIcon } from './components/letters/LettersIIcon.svelte';
-export { default as LettersJIcon } from './components/letters/LettersJIcon.svelte';
-export { default as LettersKIcon } from './components/letters/LettersKIcon.svelte';
-export { default as LettersLIcon } from './components/letters/LettersLIcon.svelte';
-export { default as LettersMIcon } from './components/letters/LettersMIcon.svelte';
-export { default as LettersNIcon } from './components/letters/LettersNIcon.svelte';
-export { default as LettersOIcon } from './components/letters/LettersOIcon.svelte';
-export { default as LettersPIcon } from './components/letters/LettersPIcon.svelte';
-export { default as LettersQIcon } from './components/letters/LettersQIcon.svelte';
-export { default as LettersRIcon } from './components/letters/LettersRIcon.svelte';
-export { default as LettersSIcon } from './components/letters/LettersSIcon.svelte';
-export { default as LettersTIcon } from './components/letters/LettersTIcon.svelte';
-export { default as LettersUIcon } from './components/letters/LettersUIcon.svelte';
-export { default as LettersVIcon } from './components/letters/LettersVIcon.svelte';
-export { default as LettersWIcon } from './components/letters/LettersWIcon.svelte';
-export { default as LettersXIcon } from './components/letters/LettersXIcon.svelte';
-export { default as LettersYIcon } from './components/letters/LettersYIcon.svelte';
-export { default as LettersZIcon } from './components/letters/LettersZIcon.svelte';
+const componentsDir = 'lib';
 
-// component
-export { default as ComponentBreadcrumbIcon } from './components/component/ComponentBreadcrumbIcon.svelte';
-export { default as ComponentCheckboxIcon } from './components/component/ComponentCheckboxIcon.svelte';
-export { default as ComponentDropdownIcon } from './components/component/ComponentDropdownIcon.svelte';
-export { default as ComponentDividerHorizontalIcon } from './components/component/ComponentDividerHorizontalIcon.svelte';
-export { default as ComponentDividerVerticalIcon } from './components/component/ComponentDividerVerticalIcon.svelte';
-export { default as ComponentGridIcon } from './components/component/ComponentGridIcon.svelte';
-export { default as ComponentInputIcon } from './components/component/ComponentInputIcon.svelte';
-export { default as ComponentLayoutIcon } from './components/component/ComponentLayoutIcon.svelte';
-export { default as ComponentRadioIcon } from './components/component/ComponentRadioIcon.svelte';
-export { default as ComponentSpaceIcon } from './components/component/ComponentSpaceIcon.svelte';
-export { default as ComponentStepsIcon } from './components/component/ComponentStepsIcon.svelte';
-export { default as ComponentSwitchIcon } from './components/component/ComponentSwitchIcon.svelte';
+const exportStatements = fs.readdirSync(componentsDir)
+  .filter(file => file.endsWith('.svelte'))
+  .map(file => {
+    const componentName = path.parse(file).name;
+    return `export { default as ${componentName} } from "./${componentName}.svelte";`;
+  });
 
-// numbers
-export { default as Numbers0Icon } from './components/numbers/Numbers0Icon.svelte';
-export { default as Numbers1Icon } from './components/numbers/Numbers1Icon.svelte';
-export { default as Numbers2Icon } from './components/numbers/Numbers2Icon.svelte';
-export { default as Numbers3Icon } from './components/numbers/Numbers3Icon.svelte';
-export { default as Numbers4Icon } from './components/numbers/Numbers4Icon.svelte';
-export { default as Numbers5Icon } from './components/numbers/Numbers5Icon.svelte';
-export { default as Numbers6Icon } from './components/numbers/Numbers6Icon.svelte';
-export { default as Numbers7Icon } from './components/numbers/Numbers7Icon.svelte';
-export { default as Numbers8Icon } from './components/numbers/Numbers8Icon.svelte';
-export { default as Numbers9Icon } from './components/numbers/Numbers9Icon.svelte';
-export { default as Numbers01Icon } from './components/numbers/Numbers01Icon.svelte';
-export { default as Numbers11Icon } from './components/numbers/Numbers11Icon.svelte';
-export { default as Numbers21Icon } from './components/numbers/Numbers21Icon.svelte';
-export { default as Numbers31Icon } from './components/numbers/Numbers31Icon.svelte';
-export { default as Numbers41Icon } from './components/numbers/Numbers41Icon.svelte';
-export { default as Numbers51Icon } from './components/numbers/Numbers51Icon.svelte';
-export { default as Numbers61Icon } from './components/numbers/Numbers61Icon.svelte';
-export { default as Numbers71Icon } from './components/numbers/Numbers71Icon.svelte';
-export { default as Numbers81Icon } from './components/numbers/Numbers81Icon.svelte';
-export { default as Numbers91Icon } from './components/numbers/Numbers91Icon.svelte';
+const indexPath = path.join(componentsDir, 'index.js');
 
-// facial
-export { default as FacialExcitedIcon } from './components/facial/FacialExcitedIcon.svelte';
-export { default as FacialGiggleIcon } from './components/facial/FacialGiggleIcon.svelte';
-export { default as FacialSneerIcon } from './components/facial/FacialSneerIcon.svelte';
-export { default as FacialSurprisedIcon } from './components/facial/FacialSurprisedIcon.svelte';
-export { default as FacialUnhappyIcon } from './components/facial/FacialUnhappyIcon.svelte';
-
-// food
-export { default as FoodAppleIcon } from './components/food/FoodAppleIcon.svelte';
-export { default as FoodBambooShootIcon } from './components/food/FoodBambooShootIcon.svelte';
-export { default as FoodMilkIcon } from './components/food/FoodMilkIcon.svelte';
-export { default as FoodPeachIcon } from './components/food/FoodPeachIcon.svelte';
-export { default as FoodTangerinrIcon } from './components/food/FoodTangerinrIcon.svelte';
+fs.writeFileSync(indexPath, exportStatements.join('\n'));

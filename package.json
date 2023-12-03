@@ -1,32 +1,21 @@
 {
-  "name": "tdesign-icons-svelte",
-  "title": "tdesign-icons-svelte",
-  "version": "0.0.1-alpha.1",
-  "description": "TDesign Icons for svelte",
-  "type": "module",
-  "main": "lib/index.js",
-  "files": [
-    "lib"
-  ],
-  "keywords": [
-    "icon",
-    "svelte",
-    "tdesign",
-    "javascript"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hzx000822/tdesign-icons-svelte.git"
-  },
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "build": "rollup -c"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gulp": "gulp build && gulp copy"
   },
   "devDependencies": {
-    "rollup": "^2.79.1",
-    "rollup-plugin-copy": "^3.4.0",
-    "svelte": "^4.0.5"
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "svelte": "^4.2.3",
+    "svg-parser": "^2.0.4",
+    "tdesign-icons-svg": "^0.2.0",
+    "through2": "^4.0.2",
+    "vite": "^5.0.0"
   }
 }
