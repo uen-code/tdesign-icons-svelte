@@ -1,5 +1,5 @@
-const createTransformStream = require("./transform");
-const svelteTemplate = require("./svelte-template");
+const createTransformStream = require('./transform');
+const svelteTemplate = require('./svelte-template');
 
 function useTemplate() {
   return createTransformStream((svelteElementString) => {
@@ -8,4 +8,4 @@ function useTemplate() {
   });
 }
 
-module.exports = useTemplate
+module.exports = useTemplate;

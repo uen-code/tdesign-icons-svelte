@@ -1,21 +1,47 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "tdesign-icons-svelte",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "description": "TDesign icons as Svelte components",
+  "svelte": "./index.js",
+  "main": "./index.js",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "gulp": "gulp build && gulp copy"
+    "gulp": "gulp build && node export-statements.js && npm run format",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uen-code/tdesign-icons-svelte.git"
+  },
+  "homepage": "https://github.com/uen-code/tdesign-icons-svelte",
+  "bugs": "https://github.com/uen-code/tdesign-icons-svelte/issues",
+  "keywords": [
+    "tdesign",
+    "tdesign svelte",
+    "tdesign icons",
+    "icons",
+    "components",
+    "svelte",
+    "svg"
+  ],
+  "files": [
+    "lib",
+    "Icon.svelte",
+    "common.js",
+    "index.css"
+  ],
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
-    "svelte": "^4.2.3",
+    "prettier": "^3.1.0",
+    "prettier-plugin-svelte": "^3.1.2",
+    "svelte": "^4.2.8",
     "svg-parser": "^2.0.4",
-    "tdesign-icons-svg": "^0.2.0",
-    "through2": "^4.0.2",
-    "vite": "^5.0.0"
+    "through2": "^4.0.2"
   }
 }

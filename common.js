@@ -1,3 +1,5 @@
+export const classPrefix = 't';
+
 export function getClassString(classObj) {
   let classString = '';
   for (let key in classObj) {
@@ -27,15 +29,21 @@ export function getStyleString(obj) {
     .join(';');
 }
 
-/***
- * number,string distinguish
- */
-function processSize(size) {
-  if (Number.isNaN(Number(size)) && !(size in SIZE)) {
-    return size;
-  } else {
-    return size + 'px';
+export function camelToDash(str) {
+  return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+}
+
+export function processSize(size) {
+  if (size in SIZE) {
+    return '';
   }
+
+  const parsedSize = Number(size);
+  if (Number.isNaN(parsedSize)) {
+    return size;
+  }
+
+  return parsedSize + 'px';
 }
 
 export const SIZE = {

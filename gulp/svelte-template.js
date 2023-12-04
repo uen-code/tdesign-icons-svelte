@@ -1,5 +1,5 @@
-function svelteTemplate(attrs, content){
-    return `<script>
+function svelteTemplate(attrs, content) {
+  return `<script>
       import { getClassString, getStyleString, SIZE, processSize } from '../common';
     
       import '../index.css';
@@ -25,7 +25,6 @@ function svelteTemplate(attrs, content){
     <svg
       class={getClassString(iconClass)}
       style={getStyleString(initStyle)}
-      on:click
       width="1em"
       height="1em"
       viewBox="0 0 24 24"
@@ -35,4 +34,4 @@ function svelteTemplate(attrs, content){
     ${content.join('')}
     </svg>`;
 }
-module.exports =  svelteTemplate
+module.exports = svelteTemplate;

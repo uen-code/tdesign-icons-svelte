@@ -17,4 +17,4 @@ const createTransformStream = function (fn) {
   });
 };
 
-module.exports = createTransformStream
+module.exports = createTransformStream;
